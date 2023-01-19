@@ -44,7 +44,7 @@ class DonationContract {
   }
 
   @call({ privateFunction: true })
-  change_beneficiary(beneficiary) {
+  change_beneficiary({beneficiary}: {beneficiary:string}) {
     this.beneficiary = beneficiary;
   }
 
